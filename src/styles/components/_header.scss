@@ -1,0 +1,95 @@
+.header-container {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 1rem 3rem;
+
+  & > * {
+    width: 33%;
+    display: flex;
+  }
+
+  .burger-container {
+    display: flex;
+    color: $c-white;
+    align-items: center;
+
+    #idCheckbox {
+      display: none;
+    }
+
+    #burger {
+      width: 35px;
+      height: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      background-color: transparent;
+      margin-right: 0.5rem;
+
+      .burger {
+        height: 2px;
+        background-color: $c-white;
+        transition: 0.5s;
+        z-index: 999;
+      }
+
+      .top {
+        width: 35px;
+      }
+
+      .middle {
+        width: 25px;
+      }
+
+      .bottom {
+        width: 15px;
+      }
+    }
+
+    #idCheckbox:checked ~ #burger > div:nth-child(1) {
+      transform: translateY(8.5px) rotate(45deg);
+    }
+
+    #idCheckbox:checked ~ #burger > div:nth-child(2) {
+      scale: 0;
+    }
+
+    #idCheckbox:checked ~ #burger > div:nth-child(3) {
+      transform: translateY(-8.5px) rotate(-45deg);
+      width: 35px;
+    }
+  }
+
+  .logo-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cta-container {
+    justify-content: flex-end;
+    align-items: center;
+
+    .button {
+      font-family: $f-bebas;
+      font-size: 1.5rem;
+      padding: 0.5rem 2rem;
+      border: $c-light-cherry solid 2px;
+      background-color: transparent;
+      color: $c-white;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: $c-light-cherry;
+      }
+    }
+  }
+}

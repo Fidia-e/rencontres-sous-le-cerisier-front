@@ -1,0 +1,123 @@
+.hero {
+  width: 101%;
+  height: 100vh;
+  display: flex;
+  background: {
+    image: url('/assets/images/hero-bg.webp');
+    position: center center;
+    size: cover;
+    repeat: no-repeat;
+  }
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px 4rem 0 2rem;
+  color: $c-white;
+  position: relative;
+
+  .hero-img {
+    margin-top: 5rem;
+  }
+
+  .hero-text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-family: $f-bebas;
+    margin-top: 2rem;
+
+    .hero-title {
+      display: flex;
+      justify-content: flex-end;
+
+      h1 {
+        width: 650px;
+        font-size: 10rem;
+        line-height: 9rem;
+        text-align: end;
+      }
+
+      h3 {
+        color: $c-light-cherry;
+        text-transform: uppercase;
+        font-size: 3rem;
+        margin-top: 0.3rem;
+      }
+    }
+
+    .hero-subtitle {
+      width: 35%;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      text-align: end;
+    }
+
+    .hero-subtitle-span {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      color: $c-light-cherry;
+    }
+
+    .icons-container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 5rem;
+
+      *:not(:first-child) {
+        margin-top: 0.3rem;
+      }
+
+      .icon {
+        transition: all 0.3s ease-in-out;
+        fill: $c-white;
+
+        &:hover {
+          cursor: pointer;
+          fill: $c-light-cherry;
+          transform: translateY(-3px);
+        }
+      }
+    }
+  }
+
+  .CTA {
+    width: 160px;
+    height: 160px;
+    display: flex;
+    position: absolute;
+    top: 40vh;
+    left: 30vw;
+    font-family: $f-bebas;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: $c-cherry;
+    border-radius: 50%;
+    color: $c-white;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    p {
+      width: 70%;
+      margin: auto;
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    bottom: 2rem;
+    left: 50vw;
+    transition: all 0.3s ease-in-out;
+    fill: $c-white;
+
+    &:hover {
+      cursor: pointer;
+      fill: $c-light-cherry;
+      transform: translateY(3px);
+    }
+  }
+}
