@@ -8,8 +8,8 @@ import Header from 'components/Header';
 const App: FunctionComponent = () => {
   return (
     <div className="App">
-      <Header />
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>

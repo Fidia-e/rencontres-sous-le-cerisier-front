@@ -40,8 +40,36 @@ const Home: FunctionComponent = () => {
         <Arrow className="arrow" width={30} height={30} />
       </section>
 
-      <section style={{ height: '100vh' }}>
+      <section className="actuality-container" id="à-la-une" style={{ height: '50vh' }}>
         <div>ACTU</div>
+      </section>
+
+      <section className="agenda-container" id="agenda" style={{ height: '50vh' }}>
+        <div>AGENDA</div>
+      </section>
+
+      <section className="agenda-container" id="réservation" style={{ height: '50vh' }}>
+        <div>RESA</div>
+      </section>
+
+      <section className="agenda-container" id="contact" style={{ height: '50vh' }}>
+        <div>CONTACT</div>
+      </section>
+
+      <section className="agenda-container" style={{ height: '50vh' }}>
+        <div>ARCHIVES</div>
+      </section>
+
+      <section className="agenda-container" style={{ height: '50vh' }}>
+        <div>A PROPOS</div>
+      </section>
+
+      <section className="agenda-container" style={{ height: '50vh' }}>
+        <div>BLOG</div>
+      </section>
+
+      <section className="agenda-container" style={{ height: '50vh' }}>
+        <div>FAIRE UN DON</div>
       </section>
     </div>
   );
