@@ -5,9 +5,7 @@
 @import 'components/header', 'components/footer', 'components/scrollToTop';
 
 // layouts
-@import 'layouts/hero';
-//'layouts/services', 'layouts/faq', 'layouts/about', 'layouts/gift', 'layouts/reviews',
-//   'layouts/results';
+@import 'layouts/hero', 'layouts/actu', 'layouts/agenda', 'layouts/resa', 'layouts/contact';
 
 // pages
 @import 'pages/home';

@@ -12,7 +12,7 @@ body {
   color: $c-black;
   position: relative;
   overflow-x: hidden;
-  font-family: $f-montserrat;
+  font-family: $f-montserrat !important;
   background-color: $c-dark-green;
 
   &:after {
@@ -34,4 +34,18 @@ body {
 ::selection {
   background-color: $c-dark-cherry;
   color: $c-white;
+}
+
+sup {
+  font-size: xx-small;
+  vertical-align: super;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bg-red {
+  background-color: $c-cherry;
+  padding: 1rem 3rem 0 3rem;
 }
