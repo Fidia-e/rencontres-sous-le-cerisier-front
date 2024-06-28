@@ -204,6 +204,10 @@
 
 @media (min-width: 375px) {
   .header-container {
+    .header {
+      padding: 1rem;
+    }
+
     .nav-active {
       .icons-container {
         margin-top: 3rem;

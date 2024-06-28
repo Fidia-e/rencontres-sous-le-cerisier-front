@@ -1,74 +1,83 @@
 .hero {
-  width: 101%;
-  height: 100vh;
+  width: 100vw;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column-reverse;
   background: {
-    image: url('/assets/images/hero-bg.webp');
-    position: center center;
+    image: url('/assets/images/hero-bg-mobile.webp');
+    position: top center;
     size: cover;
     repeat: no-repeat;
   }
   justify-content: space-between;
   align-items: flex-start;
-  padding: 80px 4rem 0 2rem;
+  padding: 2rem 0.5rem;
   color: $c-white;
   position: relative;
+  overflow: hidden;
 
   .hero-img {
-    margin-top: 5rem;
+    margin-top: -3rem;
+    width: 200px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   .hero-text {
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
     font-family: $f-bebas;
-    margin-top: 2rem;
+    margin: 2rem auto 0 auto;
 
     .hero-title {
       display: flex;
-      justify-content: flex-end;
+      flex-direction: column;
 
       h1 {
-        width: 650px;
-        font-size: 10rem;
-        line-height: 9rem;
+        width: 100%;
+        font-size: 4rem;
+        line-height: 4rem;
         text-align: end;
       }
 
       h3 {
         color: $c-light-cherry;
         text-transform: uppercase;
-        font-size: 3rem;
-        margin-top: 0.3rem;
+        font-size: 1.2rem;
+        text-align: right;
       }
     }
 
     .hero-subtitle {
-      width: 35%;
-      font-size: 2rem;
-      line-height: 2.5rem;
+      width: 100%;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
       text-align: end;
     }
 
     .hero-subtitle-span {
-      font-size: 2rem;
-      line-height: 2.5rem;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
       color: $c-light-cherry;
     }
 
     .icons-container {
       display: flex;
-      flex-direction: column;
-      margin-top: 5rem;
+      margin-top: 1rem;
 
-      *:not(:first-child) {
-        margin-top: 0.3rem;
+      *:not(:last-child) {
+        margin-right: 0.3rem;
       }
 
       .icon {
+        width: 35px;
+        height: 35px;
         transition: all 0.3s ease-in-out;
         fill: $c-white;
 
@@ -82,14 +91,17 @@
   }
 
   .CTA {
-    width: 160px;
-    height: 160px;
+    width: 110px;
+    height: 110px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 40vh;
-    left: 30vw;
+    top: 75vh;
+    left: 60vw;
     font-family: $f-bebas;
-    font-size: 2rem;
+    font-size: 1.2rem;
     text-align: center;
     padding: 1rem;
     background-color: $c-cherry;
@@ -102,8 +114,9 @@
     }
 
     p {
-      width: 70%;
+      width: 100%;
       margin: auto;
+      text-align: center;
     }
   }
 
@@ -118,6 +131,382 @@
       cursor: pointer;
       fill: $c-light-cherry;
       transform: translateY(3px);
+    }
+  }
+}
+
+@media (min-width: 360px) {
+  .hero {
+    .CTA {
+      top: 70vh;
+    }
+  }
+}
+
+@media (min-width: 375px) {
+  .hero {
+    height: 100vh;
+    padding: 3rem 1rem;
+
+    .hero-img {
+      margin-top: -3rem;
+      width: 200px;
+    }
+
+    .hero-text {
+      .hero-title {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+          width: 100%;
+          font-size: 4.5rem;
+          line-height: 4rem;
+          text-align: end;
+        }
+      }
+    }
+
+    .CTA {
+      top: 70vh;
+      left: 60vw;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .arrow {
+      position: absolute;
+      bottom: 2rem;
+      left: 50vw;
+      transition: all 0.3s ease-in-out;
+      fill: $c-white;
+
+      &:hover {
+        cursor: pointer;
+        fill: $c-light-cherry;
+        transform: translateY(3px);
+      }
+    }
+  }
+}
+
+@media (min-width: 400px) {
+}
+
+@media (min-width: 414px) {
+}
+
+@media (min-width: 430px) {
+  .hero {
+    .hero-text {
+      .hero-title {
+        h1 {
+          font-size: 5rem;
+          line-height: 4.5rem;
+        }
+      }
+    }
+
+    .CTA {
+      top: 60vh;
+    }
+  }
+}
+
+/*----------------------------------------------------------------------------------
+-------------------------------------  TABLETTE ------------------------------------
+----------------------------------------------------------------------------------*/
+
+@media (min-width: 599px) {
+  .hero {
+    .hero-img {
+      margin-top: -10rem;
+      width: 300px;
+    }
+
+    .hero-text {
+      .hero-title {
+        width: 90%;
+
+        h1 {
+          width: 100%;
+          font-size: 7rem;
+          line-height: 6rem;
+        }
+
+        h3 {
+          font-size: 2rem;
+          line-height: 2.5rem;
+        }
+      }
+
+      .hero-subtitle {
+        width: 70%;
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+
+      .hero-subtitle-span {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+
+      .icons-container {
+        *:not(:last-child) {
+          margin-right: 0.3rem;
+        }
+
+        .icon {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+
+    .CTA {
+      width: 120px;
+      height: 120px;
+      top: 70vh;
+      left: 60vw;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (min-width: 699px) {
+  .hero {
+    .hero-text {
+      .hero-title {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media (min-width: 899px) {
+  .hero {
+    .hero-img {
+      margin-top: -7rem;
+      width: 350px;
+    }
+
+    .hero-text {
+      .hero-title {
+        width: 70%;
+      }
+
+      .hero-subtitle {
+        width: 60%;
+      }
+    }
+
+    .CTA {
+      width: 160px;
+      height: 160px;
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    .hero-img {
+      margin-top: -7rem;
+      width: 400px;
+    }
+
+    .hero-text {
+      margin-top: 5rem;
+
+      .hero-title {
+        width: 70%;
+
+        h1 {
+          font-size: 10rem;
+          line-height: 9rem;
+        }
+
+        h3 {
+          font-size: 3rem;
+          line-height: 3.5rem;
+        }
+      }
+
+      .hero-subtitle {
+        width: 60%;
+        font-size: 3rem;
+        line-height: 3.5rem;
+      }
+
+      .hero-subtitle-span {
+        font-size: 3rem;
+        line-height: 3.5rem;
+      }
+    }
+  }
+}
+
+/*----------------------------------------------------------------------------------
+-------------------------------------  DESKTOP -------------------------------------
+----------------------------------------------------------------------------------*/
+
+@media (min-width: 1199px) {
+  .hero {
+    flex-direction: row;
+    background-image: url('/assets/images/hero-bg.webp');
+    padding: 4rem 3rem 3rem 3rem;
+
+    .hero-img {
+      margin-top: 4rem;
+    }
+
+    .hero-text {
+      width: 100%;
+      margin-top: 2rem;
+
+      .hero-title {
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        h1 {
+          font-size: 7rem;
+          line-height: 6rem;
+          text-align: end;
+        }
+
+        h3 {
+          width: 100%;
+          font-size: 1.5rem;
+          line-height: 2rem;
+          margin-right: 0.5rem;
+        }
+      }
+
+      .hero-subtitle {
+        width: 35%;
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+
+      .hero-subtitle-span {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+
+      .icons-container {
+        flex-direction: column;
+        margin-top: 1rem;
+
+        *:not(:first-child) {
+          margin-top: 0.3rem;
+        }
+      }
+    }
+
+    .CTA {
+      top: 30vh;
+      left: 35vw;
+    }
+  }
+}
+
+@media (min-width: 1399px) {
+  .hero {
+    padding: 5rem 3rem 3rem 3rem;
+
+    .hero-img {
+      width: 450px;
+      margin-top: 8rem;
+    }
+
+    .hero-text {
+      .hero-title {
+        text-align: right;
+
+        h1 {
+          font-size: 8.5rem;
+          line-height: 7.5rem;
+        }
+
+        h3 {
+          font-size: 2.5rem;
+          line-height: 3rem;
+        }
+      }
+
+      .hero-subtitle {
+        width: 60%;
+        font-size: 2.5rem;
+        line-height: 3rem;
+      }
+
+      .hero-subtitle-span {
+        font-size: 2.5rem;
+        line-height: 3rem;
+      }
+
+      .icons-container {
+        margin-top: 2rem;
+      }
+    }
+
+    .CTA {
+      top: 40vh;
+      left: 30vw;
+    }
+  }
+}
+
+@media (min-width: 1599px) {
+  .hero {
+    padding: 6rem 3rem 3rem 3rem;
+
+    .hero-img {
+      width: 550px;
+      margin-top: 10rem;
+    }
+
+    .hero-text {
+      width: 90%;
+
+      .hero-title {
+        h1 {
+          font-size: 10rem;
+          line-height: 9rem;
+        }
+
+        h3 {
+          font-size: 3rem;
+          line-height: 3.5rem;
+        }
+      }
+
+      .hero-subtitle {
+        font-size: 3rem;
+        line-height: 3.5rem;
+      }
+
+      .hero-subtitle-span {
+        font-size: 3rem;
+        line-height: 3.5rem;
+      }
+
+      .icons-container {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero {
+    padding: 8rem 3rem 3rem 3rem;
+
+    .hero-text {
+      width: 70%;
     }
   }
 }
