@@ -1,14 +1,15 @@
 // base
 @import 'base/reset', 'base/variables', 'base/fonts', 'base/global';
 
-// components
-@import 'components/header', 'components/footer', 'components/scrollToTop', 'components/form';
-
 // layouts
 @import 'layouts/hero', 'layouts/actu', 'layouts/agenda', 'layouts/resa', 'layouts/contact';
+
+// components
+@import 'components/cta-give-button', 'components/header', 'components/footer', 'components/scrollToTop',
+  'components/form', 'components/gallery';
 
 // pages
 @import 'pages/home';
 
 // Default Splide theme
-// @import '@splidejs/react-splide/css';
+@import '@splidejs/react-splide/css';

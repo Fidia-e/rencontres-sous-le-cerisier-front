@@ -90,36 +90,6 @@
     }
   }
 
-  .CTA {
-    width: 110px;
-    height: 110px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 75vh;
-    left: 60vw;
-    font-family: $f-bebas;
-    font-size: 1.2rem;
-    text-align: center;
-    padding: 1rem;
-    background-color: $c-cherry;
-    border-radius: 50%;
-    color: $c-white;
-    transition: all 0.3s ease-in-out;
-
-    &:hover {
-      transform: scale(1.1);
-    }
-
-    p {
-      width: 100%;
-      margin: auto;
-      text-align: center;
-    }
-  }
-
   .arrow {
     position: absolute;
     bottom: 2rem;
@@ -131,14 +101,6 @@
       cursor: pointer;
       fill: $c-light-cherry;
       transform: translateY(3px);
-    }
-  }
-}
-
-@media (min-width: 360px) {
-  .hero {
-    .CTA {
-      top: 70vh;
     }
   }
 }
@@ -164,15 +126,6 @@
           line-height: 4rem;
           text-align: end;
         }
-      }
-    }
-
-    .CTA {
-      top: 70vh;
-      left: 60vw;
-
-      &:hover {
-        transform: scale(1.1);
       }
     }
 
@@ -207,10 +160,6 @@
           line-height: 4.5rem;
         }
       }
-    }
-
-    .CTA {
-      top: 60vh;
     }
   }
 }
@@ -264,14 +213,6 @@
         }
       }
     }
-
-    .CTA {
-      width: 120px;
-      height: 120px;
-      top: 70vh;
-      left: 60vw;
-      font-size: 1.5rem;
-    }
   }
 }
 
@@ -300,12 +241,6 @@
       .hero-subtitle {
         width: 60%;
       }
-    }
-
-    .CTA {
-      width: 160px;
-      height: 160px;
-      font-size: 2rem;
     }
   }
 }
@@ -405,11 +340,6 @@
         }
       }
     }
-
-    .CTA {
-      top: 30vh;
-      left: 35vw;
-    }
   }
 }
 
@@ -451,11 +381,6 @@
       .icons-container {
         margin-top: 2rem;
       }
-    }
-
-    .CTA {
-      top: 40vh;
-      left: 30vw;
     }
   }
 }

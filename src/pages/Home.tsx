@@ -6,6 +6,7 @@ import Instagram from 'components/SVG/Instagram';
 import Email from 'components/SVG/Email';
 import Arrow from 'components/SVG/Arrow';
 import Form from 'components/Form';
+import Gallery from 'components/Gallery';
 import ParentsMars from 'assets/images/ParentsMars.jpeg';
 import PianoFurioso from 'assets/images/PianoFurioso.jpeg';
 import TocToc from 'assets/images/TocToc.png';
@@ -44,7 +45,7 @@ const Home: FunctionComponent = () => {
           </div>
         </div>
 
-        <button className="CTA">
+        <button className="CTA-give-button-hero CTA-give-button">
           <p>Nous soutenir</p>
         </button>
         <Arrow className="arrow" width={30} height={30} />
@@ -115,7 +116,7 @@ const Home: FunctionComponent = () => {
         </div>
 
         <div className="cta-container">
-          <button className="CTA-button">
+          <button className="CTA-give-button">
             <p>Nous soutenir</p>
           </button>
 
@@ -317,7 +318,7 @@ const Home: FunctionComponent = () => {
         </div>
 
         <div className="cta-container">
-          <button className="CTA-button">
+          <button className="CTA-give-button">
             <p>Nous soutenir</p>
           </button>
 
@@ -339,7 +340,9 @@ const Home: FunctionComponent = () => {
       </section>
 
       {/*//& ----------------------------------------- GALLERY ----------------------------------------- */}
-      <section className="gallery-container">{/* <Gallery /> */}</section>
+      <section className="gallery-container">
+        <Gallery />
+      </section>
     </div>
   );
 };

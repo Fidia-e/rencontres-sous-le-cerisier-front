@@ -1,0 +1,93 @@
+.CTA-give-button {
+  width: 110px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $f-bebas;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: $c-cherry;
+  border-radius: 50%;
+  color: $c-white;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  p {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.CTA-give-button-hero {
+  position: absolute;
+  top: 75vh;
+  left: 60vw;
+}
+
+@media (min-width: 360px) {
+  .CTA-give-button-hero {
+    top: 70vh;
+  }
+}
+
+@media (min-width: 375px) {
+  .CTA-give-button-hero {
+    left: 60vw;
+  }
+}
+
+@media (min-width: 430px) {
+  .CTA-give-button-hero {
+    top: 60vh;
+  }
+}
+
+/*----------------------------------------------------------------------------------
+-------------------------------------  TABLETTE ------------------------------------
+----------------------------------------------------------------------------------*/
+
+@media (min-width: 599px) {
+  .CTA-give-button {
+    width: 120px;
+    height: 120px;
+    font-size: 1.5rem;
+  }
+
+  .CTA-give-button-hero {
+    top: 70vh;
+    left: 60vw;
+  }
+}
+
+@media (min-width: 899px) {
+  .CTA-give-button {
+    width: 160px;
+    height: 160px;
+    font-size: 2rem;
+  }
+}
+
+/*----------------------------------------------------------------------------------
+-------------------------------------  DESKTOP -------------------------------------
+----------------------------------------------------------------------------------*/
+
+@media (min-width: 1199px) {
+  .CTA-give-button-hero {
+    top: 30vh;
+    left: 35vw;
+  }
+}
+
+@media (min-width: 1399px) {
+  .CTA-give-button-hero {
+    top: 40vh;
+    left: 30vw;
+  }
+}
