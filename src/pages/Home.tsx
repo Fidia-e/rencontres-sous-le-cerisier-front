@@ -5,6 +5,7 @@ import Facebook from 'components/SVG/Facebook';
 import Instagram from 'components/SVG/Instagram';
 import Email from 'components/SVG/Email';
 import Arrow from 'components/SVG/Arrow';
+import Form from 'components/Form';
 import ParentsMars from 'assets/images/ParentsMars.jpeg';
 import PianoFurioso from 'assets/images/PianoFurioso.jpeg';
 import TocToc from 'assets/images/TocToc.png';
@@ -202,46 +203,42 @@ const Home: FunctionComponent = () => {
             Réservations ouvertes du 1<sup>er</sup> eu 30 juin 2024
           </p>
 
-          <form className="form" action="">
-            <h3 className="title-form">Vos billets</h3>
+          {/*//* ----------------------------------------- FORM ----------------------------------------- */}
 
-            <div className="form-content">
-              <h4 className="ticket-title">Titre de votre billet</h4>
+          <Form />
 
-              <div className="price-content">
-                <p className="price">20€</p>
+          {/*//* -------------------------------------------------------------------------------------- */}
 
-                <div className="quantity">
-                  <p>Quantité : &nbsp;</p>
-                  <button>-</button>
-                  <p className="number">0</p>
-                  <button>+</button>
-                </div>
-              </div>
-
-              <div className="days">
-                <div className="days-item">
-                  <input type="radio" />
-                  <label>Jour 1</label>
-                </div>
-                <div className="days-item">
-                  <input type="radio" />
-                  <label>Jour 2</label>
-                </div>
-                <div className="days-item">
-                  <input type="radio" />
-                  <label>Jour 3</label>
-                </div>
-              </div>
-            </div>
-          </form>
-
-          <p className="infos">
+          <div className="infos">
             Le spectacle est gratuit pour les moins de 15 ans mais il est{' '}
             <span className="bold">nécessaire de réserver</span>. Les enfants de moins de 10 ans{' '}
             <span className="bold">doivent être accompagnés d&apos;un adulte</span> afin qu&apos;ils ne perturbent pas
             le spectacle.
-          </p>
+            <br />
+            <br />
+            <p>
+              Grâce au partenariat en partenariat avec ????????????, nous proposons une formule à 6,25€ par personne
+              pour les groupes de 30 personnes et plus.{' '}
+            </p>
+            <br />
+            <br />
+            <p>
+              Cette année le festival sera cloturé le 8 juillet par un concours de la chanson française, suivi d’un
+              spectacle musical. Évènement organisé et offert par la mairie de Savignargues 100% gratuit !
+            </p>
+            <p className="more-infos">
+              Pour plus d&apos;informations&nbsp;:&nbsp;
+              <a className="phone" href="tel:0632647714">
+                06 32 64 77 14
+              </a>{' '}
+              /&nbsp;
+              <a className="phone" href="tel:0681952662">
+                06 81 95 26 62
+              </a>
+            </p>
+          </div>
+
+          <button className="button-menu">Voir le menu du festival</button>
         </div>
       </section>
 

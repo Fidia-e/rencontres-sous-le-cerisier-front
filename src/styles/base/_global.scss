@@ -49,3 +49,13 @@ sup {
   background-color: $c-cherry;
   padding: 1rem 3rem 0 3rem;
 }
+
+.underline {
+  text-decoration: underline;
+}
+
+.line-through {
+  text-decoration: line-through;
+  color: $c-grey;
+  font-weight: 400;
+}

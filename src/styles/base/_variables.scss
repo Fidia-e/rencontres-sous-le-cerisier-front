@@ -15,9 +15,32 @@ $c-light-water-green: #acb8af;
 
 $c-black: #000;
 $c-white: #fff;
+$c-grey: #666;
+$c-light-grey: #ccc;
 
 //& fonts
 
 $f-montserrat: 'Montserrat', sans-serif;
 $f-bebas: 'bebas', sans-serif;
 $f-italic-montserrat: 'montserrat-italic', sans-serif;
+
+//& sizes
+
+$s-text-mobile: 1rem;
+$s-text-tablet: 1.1rem;
+$s-text-desktop: 1.3rem;
+
+$s-button-mobile: 1.1rem;
+$s-button-tablet: 1.3rem;
+$s-button-desktop: 1.5rem;
+
+$s-title-mobile: 1.5rem;
+$s-title-tablet: 2.3rem;
+$s-title-desktop: 3rem;
+
+$s-big-title-desktop: 4rem;
+$s-xxl-title-desktop: 8rem;
+
+$s-subtitle-mobile: 1.2rem;
+$s-subtitle-tablet: 1.4rem;
+$s-subtitle-desktop: 1.7rem;

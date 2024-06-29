@@ -92,7 +92,7 @@
 
       .button {
         font-family: $f-bebas;
-        font-size: 1.2rem;
+        font-size: $s-subtitle-mobile;
         padding: 0.3rem 1.5rem;
         border: $c-light-cherry solid 2px;
         background-color: transparent;
@@ -142,7 +142,7 @@
         display: flex;
         justify-content: center;
         font-family: $f-bebas;
-        font-size: 1.5rem;
+        font-size: $s-title-mobile;
         line-height: 2.5rem;
         color: $c-white;
         text-align: center;
@@ -246,7 +246,7 @@
 
       .cta-container {
         .button {
-          font-size: 1.5rem;
+          font-size: $s-title-mobile;
           padding: 0.5rem 2rem;
         }
       }
@@ -255,7 +255,7 @@
     .nav-active {
       .nav-list {
         .nav-item {
-          font-size: 3rem;
+          font-size: $s-title-desktop;
           line-height: 4rem;
         }
       }
@@ -366,7 +366,7 @@
     .nav-active {
       .nav-list {
         .nav-item {
-          font-size: 4rem;
+          font-size: $s-big-title-desktop;
           line-height: 4.5rem;
         }
       }

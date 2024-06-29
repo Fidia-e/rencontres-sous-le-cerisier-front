@@ -9,7 +9,7 @@
   .title {
     font-family: $f-bebas;
     text-transform: uppercase;
-    font-size: 8rem;
+    font-size: $s-xxl-title-desktop;
     line-height: 9rem;
     color: $c-white;
     text-align: right;
@@ -33,104 +33,41 @@
     margin: 0 auto;
 
     .date-resa {
-      font-size: 1.3rem;
-    }
-
-    .form {
-      width: 90%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 0 auto;
-      background-color: $c-white;
-      border-radius: 50px;
-      margin: 5rem 0;
-      padding: 2rem 4rem;
-      color: $c-black;
-
-      .title-form {
-        width: 100%;
-        font-family: $f-bebas;
-        text-transform: uppercase;
-        font-size: 3rem;
-        color: $c-light-cherry;
-        margin-bottom: 3rem;
-        text-align: left;
-      }
-
-      .form-content {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .ticket-title {
-          width: 100%;
-          font-size: 1.3rem;
-          font-weight: bold;
-          color: $c-black;
-          margin-bottom: 1rem;
-          text-align: left;
-        }
-
-        .price-content {
-          width: 100%;
-          display: flex;
-          justify-content: space-between;
-
-          .price {
-            color: $c-light-green;
-            font-weight: bold;
-            font-size: 1.2rem;
-          }
-
-          .quantity {
-            display: flex;
-            align-items: center;
-            font-size: 1.2rem;
-
-            button {
-              width: 30px;
-              height: 30px;
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-              border-radius: 50%;
-              border: none;
-              background-color: $c-light-green;
-              color: $c-white;
-              font-size: 1.2rem;
-              font-weight: bold;
-            }
-
-            .number {
-              margin: 0 1rem;
-            }
-          }
-        }
-
-        .days {
-          width: 60%;
-          display: flex;
-          justify-content: space-between;
-          font-size: 1.2rem;
-          margin-top: 2rem;
-
-          .days-item {
-            width: 90px;
-            display: flex;
-            justify-content: space-between;
-          }
-        }
-      }
+      font-size: $s-text-desktop;
     }
 
     .infos {
       width: 80%;
       text-align: center;
-      font-size: 1.3rem;
+      font-size: $s-text-desktop;
       line-height: 1.8rem;
+
+      .more-infos {
+        margin-top: 3rem;
+        font-family: $f-bebas;
+        font-size: $s-subtitle-desktop;
+      }
+    }
+
+    .button-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $c-dark-water-green;
+      border: $c-dark-water-green solid 2px;
+      border-radius: 50px;
+      color: $c-white;
+      font-family: $f-bebas;
+      font-size: $s-button-desktop;
+      font-weight: bold;
+      transition: all 0.3s ease-in-out;
+      margin-top: 3rem;
+      padding: 1rem 2rem;
+
+      &:hover {
+        background-color: transparent;
+      }
     }
   }
 }

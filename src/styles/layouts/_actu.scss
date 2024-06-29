@@ -25,7 +25,7 @@
     .title {
       font-family: $f-bebas;
       text-transform: uppercase;
-      font-size: 8rem;
+      font-size: $s-xxl-title-desktop;
       line-height: 9rem;
       color: $c-white;
       text-align: right;
@@ -57,19 +57,19 @@
       }
 
       .title-event {
-        font-size: 1.3rem;
+        font-size: $s-text-desktop;
         line-height: 1.5rem;
       }
 
       .date {
         font-family: $f-bebas;
-        font-size: 1.7rem;
+        font-size: $s-subtitle-desktop;
         line-height: 2rem;
       }
 
       .infos {
         font-family: $f-bebas;
-        font-size: 1.7rem;
+        font-size: $s-subtitle-desktop;
         line-height: 2rem;
       }
     }
@@ -80,8 +80,8 @@
       color: $c-white;
       padding: 1rem 2rem;
       border-radius: 50px;
-      font-size: 1.3rem;
-      font-family: $f-montserrat;
+      font-size: $s-button-desktop;
+      font-family: $f-bebas;
       border: $c-cherry solid 2px;
       transition: all 0.3s ease-in-out;
 

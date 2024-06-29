@@ -15,7 +15,7 @@
     .title {
       font-family: $f-bebas;
       text-transform: uppercase;
-      font-size: 8rem;
+      font-size: $s-xxl-title-desktop;
       line-height: 9rem;
       color: $c-white;
       text-align: left;
@@ -37,7 +37,7 @@
       justify-content: space-evenly;
       color: $c-white;
       font-family: $f-bebas;
-      font-size: 1.7rem;
+      font-size: $s-subtitle-desktop;
 
       p {
         margin: 0.5rem 0;
@@ -86,7 +86,7 @@
       justify-content: flex-end;
       align-items: flex-end;
       font-family: $f-bebas;
-      font-size: 1.7rem;
+      font-size: $s-subtitle-desktop;
       line-height: 2rem;
       color: $c-white;
       margin-top: 3rem;
@@ -133,7 +133,7 @@
     width: 100vw;
     font-family: $f-bebas;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: $s-title-desktop;
     color: $c-white;
     text-align: center;
     background-color: $c-cherry;
@@ -162,12 +162,12 @@
 
         .day-number {
           font-family: $f-bebas;
-          font-size: 3rem;
+          font-size: $s-title-desktop;
         }
 
         .date {
           font-family: $f-bebas;
-          font-size: 1.5rem;
+          font-size: $s-button-desktop;
         }
 
         .title-show {
@@ -179,7 +179,7 @@
         }
 
         .details {
-          font-size: 1.3rem;
+          font-size: $s-text-desktop;
           line-height: 1.8rem;
         }
       }
