@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
   background-color: $c-white;
   border-radius: 50px;
   margin: 3rem 0;
@@ -172,20 +171,112 @@
   }
 }
 
-@media (min-width: 375px) {
-}
-
-@media (min-width: 400px) {
-}
-
-@media (min-width: 414px) {
-}
-
 /*----------------------------------------------------------------------------------
 -------------------------------------  TABLETTE ------------------------------------
 ----------------------------------------------------------------------------------*/
 
 @media (min-width: 599px) {
+  .form {
+    width: 75%;
+    padding: 3rem 2rem;
+
+    .title-form {
+      width: 100%;
+      font-size: $s-title-tablet;
+      margin: 0rem 0 1rem 4rem;
+    }
+
+    .form-content {
+      height: 500px;
+      padding: 1rem 2rem 0 2rem;
+      // scrollbar-gutter: stable both-edges; // TODO
+
+      .ticket-item {
+        .ticket-title {
+          font-size: $s-text-tablet;
+          line-height: 1.7rem;
+        }
+
+        .price-content {
+          .price {
+            font-size: $s-text-tablet;
+          }
+
+          .quantity {
+            font-size: $s-text-tablet;
+
+            button {
+              font-size: $s-text-tablet;
+            }
+          }
+        }
+
+        .days {
+          width: 90%;
+          font-size: $s-text-tablet;
+
+          .days-item {
+            label {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .total-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1rem;
+      font-size: $s-text-mobile;
+      padding: 1rem 2rem 0 2rem;
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 80%;
+        height: 3px;
+        display: block;
+        background-color: $c-light-grey;
+        position: absolute;
+        top: -1rem;
+      }
+
+      .total-text {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        color: $c-black;
+      }
+
+      .button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $c-cherry;
+        border: $c-cherry solid 2px;
+        border-radius: 50px;
+        color: $c-white;
+        font-family: $f-bebas;
+        font-size: $s-button-mobile;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+        margin-top: 1rem;
+        padding: 1rem 2rem;
+
+        &:hover {
+          background-color: transparent;
+          color: $c-cherry;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 899px) {

@@ -12,7 +12,7 @@ const Gallery: FunctionComponent = () => {
     <Splide
       aria-label="Photos association"
       options={{
-        perPage: widthScreen < 599 ? 1 : widthScreen < 1199 ? 3 : 5,
+        perPage: widthScreen < 599 ? 1 : widthScreen < 799 ? 2 : widthScreen < 1199 ? 3 : 5,
         perMove: 1,
         gap: '1rem',
         // type: 'loop',
