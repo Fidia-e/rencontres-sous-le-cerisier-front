@@ -22,7 +22,6 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     .title {
       font-family: $f-bebas;
@@ -137,9 +136,60 @@
 }
 
 @media (min-width: 899px) {
+  .actu-container {
+    .content {
+      .text-container {
+        width: 90%;
+        align-self: center;
+      }
+    }
+  }
 }
 
 @media (min-width: 1024px) {
+  .actu-container {
+    padding: 7rem 3rem;
+
+    .image-container {
+      img {
+        width: 500px;
+      }
+    }
+
+    .content {
+      .title {
+        font-size: $s-xxl-title-desktop;
+        line-height: 9rem;
+
+        .red-span {
+          padding: 0.5rem 3rem 0 3rem;
+          margin-right: -3rem;
+        }
+      }
+
+      .text-container {
+        .title-event {
+          font-size: $s-text-desktop;
+          line-height: 2rem;
+        }
+
+        .date {
+          font-size: $s-text-desktop;
+          line-height: 3rem;
+        }
+
+        .infos {
+          font-size: $s-text-desktop;
+          line-height: 3rem;
+        }
+      }
+
+      .button {
+        font-size: $s-button-desktop;
+        margin: 3rem 0;
+      }
+    }
+  }
 }
 
 /*----------------------------------------------------------------------------------

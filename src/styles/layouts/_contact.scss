@@ -31,7 +31,7 @@
     }
 
     .contacts {
-      widows: 100%;
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
@@ -136,9 +136,51 @@
 }
 
 @media (min-width: 899px) {
+  .contact-container {
+    .content {
+      .contacts {
+        width: 90%;
+        align-self: center;
+      }
+    }
+  }
 }
 
 @media (min-width: 1024px) {
+  .contact-container {
+    padding: 7rem 3rem;
+
+    .content {
+      .title {
+        font-size: $s-xxl-title-desktop;
+        line-height: 9rem;
+
+        .red-span {
+          padding: 0.5rem 3rem 0 3rem;
+          margin-left: -3rem;
+        }
+      }
+
+      .contacts {
+        .contact-item {
+          font-size: $s-text-desktop;
+          line-height: 2rem;
+
+          .uppercase {
+            font-size: $s-subtitle-desktop;
+          }
+        }
+      }
+    }
+
+    .cta-container {
+      margin-top: 4rem;
+
+      .social-container {
+        font-size: $s-subtitle-desktop;
+      }
+    }
+  }
 }
 
 /*----------------------------------------------------------------------------------

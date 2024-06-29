@@ -178,9 +178,72 @@
 }
 
 @media (min-width: 899px) {
+  .resa-container {
+    .content {
+      .infos {
+        width: 80%;
+      }
+    }
+  }
 }
 
 @media (min-width: 1024px) {
+  .resa-container {
+    padding: 5rem 3rem 7rem 3rem;
+
+    .title {
+      font-size: $s-xxl-title-desktop;
+      line-height: 9rem;
+
+      .red-span {
+        padding: 0.5rem 3rem 0 3rem;
+        margin-right: -3rem;
+      }
+    }
+
+    .content {
+      .date-resa {
+        font-size: $s-text-desktop;
+        line-height: 2rem;
+      }
+
+      .infos {
+        font-size: $s-text-desktop;
+        line-height: 2rem;
+      }
+
+      .button-menu {
+        font-size: $s-button-desktop;
+      }
+    }
+
+    .address-container {
+      font-size: $s-text-desktop;
+
+      .title-address {
+        font-size: $s-title-tablet;
+        padding: 1rem 0 0.7rem 0;
+      }
+
+      .address {
+        font-size: $s-text-desktop;
+      }
+
+      .map-container {
+        height: 400px;
+
+        .map {
+          width: 100%;
+          height: 100%;
+        }
+
+        .route-map {
+          width: 400px;
+          height: 100%;
+        }
+      }
+    }
+  }
 }
 
 /*----------------------------------------------------------------------------------
