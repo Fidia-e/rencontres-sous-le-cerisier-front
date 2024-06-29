@@ -14,6 +14,7 @@ body {
   overflow-x: hidden;
   font-family: $f-montserrat !important;
   background-color: $c-dark-green;
+  color: $c-white;
 
   &:after {
     width: 101%;
@@ -58,4 +59,13 @@ sup {
   text-decoration: line-through;
   color: $c-grey;
   font-weight: 400;
+}
+
+.uppercase {
+  font-family: $f-bebas;
+  text-transform: uppercase;
+}
+
+.nowrap {
+  white-space: nowrap;
 }

@@ -9,6 +9,7 @@ import Form from 'components/Form';
 import ParentsMars from 'assets/images/ParentsMars.jpeg';
 import PianoFurioso from 'assets/images/PianoFurioso.jpeg';
 import TocToc from 'assets/images/TocToc.png';
+import Map from 'assets/images/plan.png';
 
 import NextEventFlyer from 'assets/images/event.png';
 
@@ -104,10 +105,10 @@ const Home: FunctionComponent = () => {
 
           <div className="text-container">
             <p>
-              <span className="uppercase underline">17 février</span> : Soirée repas spectacle à Saint Théodorit
+              <span className="nowrap uppercase underline">17 février</span> : Soirée repas spectacle à Saint Théodorit
             </p>
             <p>
-              <span className="uppercase underline">05, 06 et 07 juillet</span> : 27 ème édition du Festival des
+              <span className="nowrap uppercase underline">05, 06 et 07 juillet</span> : 27 ème édition du Festival des
               Rencontres sous le Cerisier
             </p>
           </div>
@@ -203,11 +204,11 @@ const Home: FunctionComponent = () => {
             Réservations ouvertes du 1<sup>er</sup> eu 30 juin 2024
           </p>
 
-          {/*//* ----------------------------------------- FORM ----------------------------------------- */}
+          {/*//* -------------------------- FORM -------------------------- */}
 
           <Form />
 
-          {/*//* -------------------------------------------------------------------------------------- */}
+          {/*//* ---------------------------------------------------------- */}
 
           <div className="infos">
             Le spectacle est gratuit pour les moins de 15 ans mais il est{' '}
@@ -240,12 +241,105 @@ const Home: FunctionComponent = () => {
 
           <button className="button-menu">Voir le menu du festival</button>
         </div>
+
+        <div className="address-container">
+          <h2 className="title-address">Adresse et plan d&apos;accès du festival</h2>
+          <p className="address">22, route d&apos;Aigremont 30350 Savignargues</p>
+          <div className="map-container">
+            <iframe
+              title="map"
+              className="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2871.8911179354254!2d4.081932315507781!3d43.96161797911201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b43e16b247e167%3A0x12f9e4d319142547!2s22%20Rte%20d&#39;Aigremont%2C%2030350%20Savignargues!5e0!3m2!1sfr!2sfr!4v1685460401430!5m2!1sfr!2sfr"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <img className="route-map" src={Map} alt="Plan des routes" />
+          </div>
+        </div>
       </section>
 
       {/*//& ----------------------------------------- CONTACT ----------------------------------------- */}
       <section className="contact-container" id="contact">
-        <div>CONTACT</div>
+        <div className="content">
+          <h2 className="title">
+            <span className="title-span">Nous</span>
+            <span className="bg-red red-span">Contacter</span>
+          </h2>
+
+          <div className="contacts">
+            <p className="contact-item">
+              <span className="nowrap uppercase">
+                <span className="underline title-contact">Mail</span>&nbsp;:
+              </span>
+              <a href="mailto:theatresouslecerisier@gmail.com">&nbsp;theatresouslecerisier@gmail.com</a>
+            </p>
+
+            <p className="contact-item">
+              <span className="nowrap uppercase">
+                <span className="underline title-contact">Réservations</span>
+                &nbsp;:&nbsp;
+              </span>
+              &nbsp;
+              <a className="phone" href="tel:0632647714">
+                06 32 64 77 14
+              </a>{' '}
+              &nbsp;/&nbsp;
+              <a className="phone" href="tel:0681952662">
+                06 81 95 26 62
+              </a>
+            </p>
+
+            <p className="contact-item">
+              <span className="nowrap uppercase">
+                <span className="underline title-contact">Technique</span>
+                &nbsp;:&nbsp;
+              </span>
+              &nbsp;
+              <a className="phone" href="tel:0699352849">
+                06 99 35 28 49
+              </a>{' '}
+              &nbsp;/&nbsp;
+              <a className="phone" href="tel:0602674114">
+                06 02 67 41 14
+              </a>
+            </p>
+
+            <p className="contact-item">
+              <span className="nowrap uppercase">
+                <span className="underline title-contact">Adresse</span>
+                &nbsp;:&nbsp;
+              </span>
+
+              <span className="address">Rencontres sous le Cerisier - 33, rue de la Forge 30350 Savignargues</span>
+            </p>
+          </div>
+        </div>
+
+        <div className="cta-container">
+          <button className="CTA-button">
+            <p>Nous soutenir</p>
+          </button>
+
+          <div className="social-container">
+            <p className="social-text">Retrouvez tous nos événements sur nos réseaux :</p>
+            <div className="icons-container">
+              <a href="https://www.facebook.com/rencontresouslecerisier/" target="_blank" rel="noreferrer">
+                <Facebook className="icon facebook" width={40} height={40} />
+              </a>
+              <a href="https://www.instagram.com/rencontressouslecerisier/" target="_blank" rel="noreferrer">
+                <Instagram className="icon instagram" width={40} height={40} />
+              </a>
+              <a href="mailto:theatresouslecerisier@gmail.com">
+                <Email className="icon email" width={40} height={40} />
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
+
+      {/*//& ----------------------------------------- GALLERY ----------------------------------------- */}
+      <section className="gallery-container">{/* <Gallery /> */}</section>
     </div>
   );
 };

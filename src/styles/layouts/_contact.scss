@@ -1,0 +1,131 @@
+.contact-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 5rem 3rem;
+
+  .content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .title {
+      font-family: $f-bebas;
+      text-transform: uppercase;
+      font-size: $s-xxl-title-desktop;
+      line-height: 9rem;
+      text-align: left;
+      margin-bottom: 5rem;
+
+      .title-span {
+        display: block;
+      }
+
+      .red-span {
+        margin-left: -3rem;
+      }
+    }
+
+    .contacts {
+      widows: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+
+      .contact-item {
+        width: 100%;
+        font-size: $s-text-desktop;
+
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+
+        .uppercase {
+          font-size: $s-subtitle-desktop;
+        }
+      }
+    }
+  }
+
+  .cta-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    .CTA-button {
+      width: 160px;
+      height: 160px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: $f-bebas;
+      font-size: 2rem;
+      text-align: center;
+      padding: 1rem;
+      background-color: $c-cherry;
+      border-radius: 50%;
+      color: $c-white;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      p {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+      }
+    }
+
+    .social-container {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      font-family: $f-bebas;
+      font-size: $s-subtitle-desktop;
+      line-height: 2rem;
+      color: $c-white;
+      margin-top: 3rem;
+      text-align: end;
+
+      .social-text {
+        width: 350px;
+      }
+
+      .icons-container {
+        width: 150px;
+        display: flex;
+        justify-content: flex-end;
+        align-self: flex-end;
+        margin-top: 1rem;
+
+        a {
+          width: 45px;
+          height: 45px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .icon {
+            transition: all ease-in-out 0.3s;
+            fill: $c-white;
+
+            &:hover {
+              transform: translateY(-3px);
+              fill: $c-light-cherry;
+            }
+          }
+        }
+      }
+    }
+  }
+}
