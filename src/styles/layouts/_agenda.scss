@@ -1,30 +1,31 @@
 .agenda-container {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 5rem 3rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem 0 1rem;
 
   .content {
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 
     .title {
       font-family: $f-bebas;
-      text-transform: uppercase;
-      font-size: $s-xxl-title-desktop;
-      line-height: 9rem;
+      font-size: $s-title-desktop;
+      line-height: 4rem;
       text-align: left;
-      margin-bottom: 5rem;
+      margin-bottom: 2rem;
+      align-self: flex-start;
 
       .title-span {
         display: block;
       }
 
       .red-span {
-        margin-left: -3rem;
+        padding: 0.5rem 1rem 0 1rem;
+        margin-left: -1rem;
       }
     }
 
@@ -36,40 +37,40 @@
 
       p {
         margin: 0.5rem 0;
-        font-size: $s-text-desktop;
+        font-size: $s-text-mobile;
+        line-height: 1.5rem;
       }
 
       .uppercase {
-        font-size: $s-subtitle-desktop;
+        font-size: $s-subtitle-mobile;
       }
     }
   }
 
   .cta-container {
-    width: 30%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
+    margin-top: 2rem;
 
     .social-container {
-      width: 60%;
+      width: 80%;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
-      align-items: flex-end;
+      align-items: center;
       font-family: $f-bebas;
-      font-size: $s-subtitle-desktop;
-      line-height: 2rem;
+      font-size: $s-subtitle-mobile;
+      line-height: 1.5rem;
       color: $c-white;
-      margin-top: 3rem;
-      text-align: end;
+      margin-top: 1rem;
+      text-align: center;
 
       .icons-container {
         width: 150px;
         display: flex;
-        justify-content: flex-end;
-        align-self: flex-end;
+        justify-content: center;
+        align-self: center;
         margin-top: 1rem;
 
         a {
@@ -98,68 +99,271 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  padding: 5rem 3rem;
+  padding: 2rem 1rem 0 1rem;
 
   .title-shows {
     width: 100vw;
     font-family: $f-bebas;
-    text-transform: uppercase;
-    font-size: $s-title-desktop;
-    color: $c-white;
+    font-size: $s-title-mobile;
     text-align: center;
     background-color: $c-cherry;
     padding: 0.7rem 0 0.5rem 0;
   }
 
   .program-content {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
-    padding: 5rem 0;
+    padding: 2rem 0;
 
     .show-infos {
       width: 100%;
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      color: $c-white;
       padding: 0.5rem 0;
 
       &:not(:last-child) {
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
       }
 
       .text-show {
-        width: 50%;
+        width: 100%;
 
         .day-number {
           font-family: $f-bebas;
-          font-size: $s-title-desktop;
+          font-size: $s-title-tablet;
         }
 
         .date {
           font-family: $f-bebas;
-          font-size: $s-button-desktop;
+          font-size: $s-button-mobile;
         }
 
         .title-show {
-          width: 60%;
+          width: 80%;
           font-family: $f-bebas;
           color: $c-light-cherry;
-          font-size: 2rem;
+          font-size: 1.5rem;
           margin: 1rem 0;
         }
 
         .details {
-          font-size: $s-text-desktop;
-          line-height: 1.8rem;
+          font-size: $s-text-mobile;
+          line-height: 1.5rem;
         }
       }
 
       .image-show {
-        width: 450px;
+        width: 250px;
         height: auto;
+        margin: 1rem 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) {
+}
+
+@media (min-width: 400px) {
+}
+
+@media (min-width: 414px) {
+}
+
+/*----------------------------------------------------------------------------------
+-------------------------------------  TABLETTE ------------------------------------
+----------------------------------------------------------------------------------*/
+
+@media (min-width: 599px) {
+}
+
+@media (min-width: 899px) {
+}
+
+@media (min-width: 1024px) {
+}
+
+/*----------------------------------------------------------------------------------
+-------------------------------------  DESKTOP -------------------------------------
+----------------------------------------------------------------------------------*/
+
+@media (min-width: 1199px) {
+}
+
+@media (min-width: 1399px) {
+}
+
+@media (min-width: 1599px) {
+}
+
+@media (min-width: 1920px) {
+  .agenda-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 5rem 3rem;
+
+    .content {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .title {
+        font-family: $f-bebas;
+        font-size: $s-xxl-title-desktop;
+        line-height: 9rem;
+        text-align: left;
+        margin-bottom: 5rem;
+
+        .title-span {
+          display: block;
+        }
+
+        .red-span {
+          padding: 1rem 3rem 0 3rem;
+          margin-left: -3rem;
+        }
+      }
+
+      .text-container {
+        widows: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        p {
+          margin: 0.5rem 0;
+          font-size: $s-text-desktop;
+        }
+
+        .uppercase {
+          font-size: $s-subtitle-desktop;
+        }
+      }
+    }
+
+    .cta-container {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+
+      .social-container {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-family: $f-bebas;
+        font-size: $s-subtitle-desktop;
+        line-height: 2rem;
+        color: $c-white;
+        margin-top: 3rem;
+        text-align: end;
+
+        .icons-container {
+          width: 150px;
+          display: flex;
+          justify-content: flex-end;
+          align-self: flex-end;
+          margin-top: 1rem;
+
+          a {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .icon {
+              transition: all ease-in-out 0.3s;
+              fill: $c-white;
+
+              &:hover {
+                transform: translateY(-3px);
+                fill: $c-light-cherry;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .shows-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 3rem;
+
+    .title-shows {
+      width: 100vw;
+      font-family: $f-bebas;
+      text-transform: uppercase;
+      font-size: $s-title-desktop;
+      color: $c-white;
+      text-align: center;
+      background-color: $c-cherry;
+      padding: 0.7rem 0 0.5rem 0;
+    }
+
+    .program-content {
+      width: 70%;
+      margin: 0 auto;
+      padding: 5rem 0;
+
+      .show-infos {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $c-white;
+        padding: 0.5rem 0;
+
+        &:not(:last-child) {
+          margin-bottom: 5rem;
+        }
+
+        .text-show {
+          width: 50%;
+
+          .day-number {
+            font-family: $f-bebas;
+            font-size: $s-title-desktop;
+          }
+
+          .date {
+            font-family: $f-bebas;
+            font-size: $s-button-desktop;
+          }
+
+          .title-show {
+            width: 60%;
+            font-family: $f-bebas;
+            color: $c-light-cherry;
+            font-size: 2rem;
+            margin: 1rem 0;
+          }
+
+          .details {
+            font-size: $s-text-desktop;
+            line-height: 1.8rem;
+          }
+        }
+
+        .image-show {
+          width: 450px;
+          height: auto;
+        }
       }
     }
   }

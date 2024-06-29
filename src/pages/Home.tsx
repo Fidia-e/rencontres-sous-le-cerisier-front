@@ -129,9 +129,6 @@ const Home: FunctionComponent = () => {
               <a href="https://www.instagram.com/rencontressouslecerisier/" target="_blank" rel="noreferrer">
                 <Instagram className="icon instagram" width={40} height={40} />
               </a>
-              <a href="mailto:theatresouslecerisier@gmail.com">
-                <Email className="icon email" width={40} height={40} />
-              </a>
             </div>
           </div>
         </div>
@@ -142,11 +139,6 @@ const Home: FunctionComponent = () => {
 
         <div className="program-content">
           <div className="show-infos">
-            <img
-              className="image-show"
-              src={ParentsMars}
-              alt="affiche de la pièce Les parents viennent de Mars, les enfants du McDo !"
-            />
             <div className="text-show">
               <p className="day-number">Jour 1</p>
               <p className="date"> Vendredi 05 juillet 2024</p>
@@ -159,6 +151,11 @@ const Home: FunctionComponent = () => {
                 tous âges ses joies... et ses galères.
               </p>
             </div>
+            <img
+              className="image-show"
+              src={ParentsMars}
+              alt="affiche de la pièce Les parents viennent de Mars, les enfants du McDo !"
+            />
           </div>
 
           <div className="show-infos">
@@ -178,7 +175,6 @@ const Home: FunctionComponent = () => {
           </div>
 
           <div className="show-infos">
-            <img className="image-show" src={TocToc} alt="affiche de la pièce Toc Toc" />
             <div className="text-show">
               <p className="day-number">Jour 3</p>
               <p className="date">Dimanche 07 juillet 2024</p>
@@ -189,6 +185,7 @@ const Home: FunctionComponent = () => {
                 groupe ou tocs incontrôlables et histoires personnelles vont se mêler!
               </p>
             </div>
+            <img className="image-show" src={TocToc} alt="affiche de la pièce Toc Toc" />
           </div>
         </div>
       </section>
@@ -199,6 +196,8 @@ const Home: FunctionComponent = () => {
           <span className="bg-red red-span">Réservation</span>
           <span className="title-span">évènement</span>
         </h2>
+
+        {/* //TODO - à afficher si les resa du festival sont ouvertes  */}
 
         <div className="content">
           <p className="date-resa">
@@ -212,17 +211,17 @@ const Home: FunctionComponent = () => {
           {/*//* ---------------------------------------------------------- */}
 
           <div className="infos">
-            Le spectacle est gratuit pour les moins de 15 ans mais il est{' '}
-            <span className="bold">nécessaire de réserver</span>. Les enfants de moins de 10 ans{' '}
-            <span className="bold">doivent être accompagnés d&apos;un adulte</span> afin qu&apos;ils ne perturbent pas
-            le spectacle.
-            <br />
+            <p>
+              Le spectacle est gratuit pour les moins de 15 ans mais il est{' '}
+              <span className="bold">nécessaire de réserver</span>. Les enfants de moins de 10 ans{' '}
+              <span className="bold">doivent être accompagnés d&apos;un adulte</span> afin qu&apos;ils ne perturbent pas
+              le spectacle.
+            </p>
             <br />
             <p>
               Grâce au partenariat en partenariat avec ????????????, nous proposons une formule à 6,25€ par personne
               pour les groupes de 30 personnes et plus.{' '}
             </p>
-            <br />
             <br />
             <p>
               Cette année le festival sera cloturé le 8 juillet par un concours de la chanson française, suivi d’un
@@ -230,32 +229,32 @@ const Home: FunctionComponent = () => {
             </p>
             <p className="more-infos">
               Pour plus d&apos;informations&nbsp;:&nbsp;
-              <a className="phone" href="tel:0632647714">
+              <a className="phone nowrap" href="tel:0632647714">
                 06 32 64 77 14
               </a>{' '}
               /&nbsp;
-              <a className="phone" href="tel:0681952662">
+              <a className="phone nowrap" href="tel:0681952662">
                 06 81 95 26 62
               </a>
             </p>
           </div>
 
           <button className="button-menu">Voir le menu du festival</button>
-        </div>
 
-        <div className="address-container">
-          <h2 className="title-address">Adresse et plan d&apos;accès du festival</h2>
-          <p className="address">22, route d&apos;Aigremont 30350 Savignargues</p>
-          <div className="map-container">
-            <iframe
-              title="map"
-              className="map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2871.8911179354254!2d4.081932315507781!3d43.96161797911201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b43e16b247e167%3A0x12f9e4d319142547!2s22%20Rte%20d&#39;Aigremont%2C%2030350%20Savignargues!5e0!3m2!1sfr!2sfr!4v1685460401430!5m2!1sfr!2sfr"
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-            <img className="route-map" src={Map} alt="Plan des routes" />
+          <div className="address-container">
+            <h2 className="title-address">Adresse et plan d&apos;accès du festival</h2>
+            <p className="address">22, route d&apos;Aigremont 30350 Savignargues</p>
+            <div className="map-container">
+              <iframe
+                title="map"
+                className="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2871.8911179354254!2d4.081932315507781!3d43.96161797911201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b43e16b247e167%3A0x12f9e4d319142547!2s22%20Rte%20d&#39;Aigremont%2C%2030350%20Savignargues!5e0!3m2!1sfr!2sfr!4v1685460401430!5m2!1sfr!2sfr"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <img className="route-map" src={Map} alt="Plan des routes" />
+            </div>
           </div>
         </div>
       </section>
@@ -270,10 +269,12 @@ const Home: FunctionComponent = () => {
 
           <div className="contacts">
             <p className="contact-item">
-              <span className="nowrap uppercase">
+              <span className=" uppercase">
                 <span className="underline title-contact">Mail</span>&nbsp;:
               </span>
-              <a href="mailto:theatresouslecerisier@gmail.com">&nbsp;theatresouslecerisier@gmail.com</a>
+              <a className="nowrap" href="mailto:theatresouslecerisier@gmail.com">
+                &nbsp;theatresouslecerisier@gmail.com
+              </a>
             </p>
 
             <p className="contact-item">
@@ -282,11 +283,11 @@ const Home: FunctionComponent = () => {
                 &nbsp;:&nbsp;
               </span>
               &nbsp;
-              <a className="phone" href="tel:0632647714">
+              <a className="phone nowrap" href="tel:0632647714">
                 06 32 64 77 14
               </a>{' '}
               &nbsp;/&nbsp;
-              <a className="phone" href="tel:0681952662">
+              <a className="phone nowrap" href="tel:0681952662">
                 06 81 95 26 62
               </a>
             </p>
@@ -297,11 +298,11 @@ const Home: FunctionComponent = () => {
                 &nbsp;:&nbsp;
               </span>
               &nbsp;
-              <a className="phone" href="tel:0699352849">
+              <a className="phone nowrap" href="tel:0699352849">
                 06 99 35 28 49
               </a>{' '}
               &nbsp;/&nbsp;
-              <a className="phone" href="tel:0602674114">
+              <a className="phone nowrap" href="tel:0602674114">
                 06 02 67 41 14
               </a>
             </p>
@@ -330,9 +331,6 @@ const Home: FunctionComponent = () => {
               </a>
               <a href="https://www.instagram.com/rencontressouslecerisier/" target="_blank" rel="noreferrer">
                 <Instagram className="icon instagram" width={40} height={40} />
-              </a>
-              <a href="mailto:theatresouslecerisier@gmail.com">
-                <Email className="icon email" width={40} height={40} />
               </a>
             </div>
           </div>

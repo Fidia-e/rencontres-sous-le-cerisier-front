@@ -1,31 +1,30 @@
 .form {
-  width: 90%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
   background-color: $c-white;
   border-radius: 50px;
-  margin: 5rem 0;
-  padding: 4rem 2rem;
+  margin: 3rem 0;
+  padding: 2rem 0.5rem;
   color: $c-black;
 
   .title-form {
     width: 100%;
     font-family: $f-bebas;
-    text-transform: uppercase;
-    font-size: $s-title-desktop;
+    font-size: $s-title-tablet;
     color: $c-light-cherry;
-    margin: 0 0 3rem 6rem;
+    margin: 1rem 0 1rem 2rem;
     text-align: left;
   }
 
   .form-content {
     width: 100%;
-    height: 500px;
+    height: 350px;
     overflow-y: scroll;
-    padding: 0 3rem;
-    scrollbar-gutter: stable both-edges;
+    padding: 0 0.5rem;
+    // scrollbar-gutter: stable both-edges; // TODO
 
     .ticket-item {
       width: 100%;
@@ -34,7 +33,7 @@
       align-items: center;
 
       &:not(:last-child) {
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
         position: relative;
 
         &::after {
@@ -44,7 +43,7 @@
           display: block;
           background-color: $c-light-grey;
           position: absolute;
-          bottom: -2.5rem;
+          bottom: -1.5rem;
         }
       }
 
@@ -54,7 +53,7 @@
 
       .ticket-title {
         width: 100%;
-        font-size: $s-text-desktop;
+        font-size: $s-text-mobile;
         font-weight: bold;
         color: $c-black;
         margin-bottom: 1rem;
@@ -64,18 +63,19 @@
       .price-content {
         width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
 
         .price {
           color: $c-light-green;
           font-weight: bold;
-          font-size: $s-text-desktop;
+          font-size: $s-text-mobile;
         }
 
         .quantity {
           display: flex;
           align-items: center;
-          font-size: $s-text-desktop;
+          font-size: $s-text-mobile;
 
           button {
             width: 30px;
@@ -88,7 +88,7 @@
             border: none;
             background-color: $c-light-green;
             color: $c-white;
-            font-size: $s-text-desktop;
+            font-size: $s-text-mobile;
             font-weight: bold;
           }
 
@@ -99,10 +99,10 @@
       }
 
       .days {
-        width: 90%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        font-size: $s-text-desktop;
+        font-size: $s-text-mobile;
         margin-top: 2rem;
 
         .days-item {
@@ -110,7 +110,8 @@
           justify-content: flex-start;
 
           label {
-            margin-left: 1rem;
+            margin-left: 0.5rem;
+            font-size: 0.9rem;
           }
         }
       }
@@ -123,19 +124,19 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2.5rem;
-    font-size: $s-text-desktop;
-    padding: 0 3rem;
+    margin-top: 1rem;
+    font-size: $s-text-mobile;
+    padding: 0 0.5rem;
     position: relative;
 
     &::before {
       content: '';
-      width: 85%;
+      width: 95%;
       height: 3px;
       display: block;
       background-color: $c-light-grey;
       position: absolute;
-      top: -2.5rem;
+      top: -1rem;
     }
 
     .total-text {
@@ -157,15 +158,225 @@
       border-radius: 50px;
       color: $c-white;
       font-family: $f-bebas;
-      font-size: $s-button-desktop;
+      font-size: $s-button-mobile;
       font-weight: bold;
       transition: all 0.3s ease-in-out;
-      margin-top: 3rem;
+      margin-top: 1rem;
       padding: 1rem 2rem;
 
       &:hover {
         background-color: transparent;
         color: $c-cherry;
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) {
+}
+
+@media (min-width: 400px) {
+}
+
+@media (min-width: 414px) {
+}
+
+/*----------------------------------------------------------------------------------
+-------------------------------------  TABLETTE ------------------------------------
+----------------------------------------------------------------------------------*/
+
+@media (min-width: 599px) {
+}
+
+@media (min-width: 899px) {
+}
+
+@media (min-width: 1024px) {
+}
+
+/*----------------------------------------------------------------------------------
+-------------------------------------  DESKTOP -------------------------------------
+----------------------------------------------------------------------------------*/
+
+@media (min-width: 1199px) {
+}
+
+@media (min-width: 1399px) {
+}
+
+@media (min-width: 1599px) {
+}
+
+@media (min-width: 1920px) {
+  .form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-color: $c-white;
+    border-radius: 50px;
+    margin: 5rem 0;
+    padding: 4rem 2rem;
+    color: $c-black;
+
+    .title-form {
+      width: 100%;
+      font-family: $f-bebas;
+      font-size: $s-title-desktop;
+      color: $c-light-cherry;
+      margin: 0 0 3rem 6rem;
+      text-align: left;
+    }
+
+    .form-content {
+      width: 100%;
+      height: 200px;
+      overflow-y: scroll;
+      padding: 0 3rem;
+      scrollbar-gutter: stable both-edges;
+
+      .ticket-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:not(:last-child) {
+          margin-bottom: 5rem;
+          position: relative;
+
+          &::after {
+            content: '';
+            width: 100%;
+            height: 3px;
+            display: block;
+            background-color: $c-light-grey;
+            position: absolute;
+            bottom: -2.5rem;
+          }
+        }
+
+        &:last-child {
+          margin-bottom: 3rem;
+        }
+
+        .ticket-title {
+          width: 100%;
+          font-size: $s-text-desktop;
+          font-weight: bold;
+          color: $c-black;
+          margin-bottom: 1rem;
+          text-align: left;
+        }
+
+        .price-content {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .price {
+            color: $c-light-green;
+            font-weight: bold;
+            font-size: $s-text-desktop;
+          }
+
+          .quantity {
+            display: flex;
+            align-items: center;
+            font-size: $s-text-desktop;
+
+            button {
+              width: 30px;
+              height: 30px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+              border: none;
+              background-color: $c-light-green;
+              color: $c-white;
+              font-size: $s-text-desktop;
+              font-weight: bold;
+            }
+
+            .number {
+              margin: 0 1rem;
+            }
+          }
+        }
+
+        .days {
+          width: 90%;
+          display: flex;
+          justify-content: space-between;
+          font-size: $s-text-desktop;
+          margin-top: 2rem;
+
+          .days-item {
+            display: flex;
+            justify-content: flex-start;
+
+            label {
+              margin-left: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .total-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 2.5rem;
+      font-size: $s-text-desktop;
+      padding: 0 3rem;
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 85%;
+        height: 3px;
+        display: block;
+        background-color: $c-light-grey;
+        position: absolute;
+        top: -2.5rem;
+      }
+
+      .total-text {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        color: $c-black;
+      }
+
+      .button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $c-cherry;
+        border: $c-cherry solid 2px;
+        border-radius: 50px;
+        color: $c-white;
+        font-family: $f-bebas;
+        font-size: $s-button-desktop;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+        margin-top: 3rem;
+        padding: 1rem 2rem;
+
+        &:hover {
+          background-color: transparent;
+          color: $c-cherry;
+        }
       }
     }
   }

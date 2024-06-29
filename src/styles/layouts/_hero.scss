@@ -11,7 +11,7 @@
   }
   justify-content: space-between;
   align-items: flex-start;
-  padding: 2rem 0.5rem;
+  padding: 2rem 0.5rem 4rem;
   color: $c-white;
   position: relative;
   overflow: hidden;
@@ -92,8 +92,8 @@
 
   .arrow {
     position: absolute;
-    bottom: 2rem;
-    left: 50vw;
+    bottom: 1rem;
+    left: calc(50vw - 15px);
     transition: all 0.3s ease-in-out;
     fill: $c-white;
 
@@ -130,17 +130,7 @@
     }
 
     .arrow {
-      position: absolute;
-      bottom: 2rem;
-      left: 50vw;
-      transition: all 0.3s ease-in-out;
-      fill: $c-white;
-
-      &:hover {
-        cursor: pointer;
-        fill: $c-light-cherry;
-        transform: translateY(3px);
-      }
+      bottom: 2.5rem;
     }
   }
 }

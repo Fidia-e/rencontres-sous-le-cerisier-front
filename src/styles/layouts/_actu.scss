@@ -1,52 +1,52 @@
 .actu-container {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column-reverse;
   align-items: center;
-  padding: 10rem 3rem;
+  padding: 3rem 1rem;
 
   .image-container {
-    width: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     img {
-      width: 80%;
-      height: 80%;
+      width: 250px;
+      height: auto;
       object-fit: cover;
     }
   }
 
   .content {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
 
     .title {
       font-family: $f-bebas;
-      text-transform: uppercase;
-      font-size: $s-xxl-title-desktop;
-      line-height: 9rem;
-      color: $c-white;
+      font-size: $s-title-desktop;
+      line-height: 4rem;
       text-align: right;
-      margin-bottom: 5rem;
+      margin-bottom: 2rem;
+      align-self: flex-end;
 
       .title-span {
         display: block;
       }
 
       .red-span {
-        margin-right: -3rem;
+        padding: 0.5rem 1rem 0 1rem;
+        margin-right: -1rem;
       }
     }
 
     .text-container {
       widows: 100%;
-      height: 200px;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      color: $c-white;
 
       & > * {
         width: 100%;
@@ -57,36 +57,168 @@
       }
 
       .title-event {
-        font-size: $s-text-desktop;
+        font-size: $s-text-mobile;
         line-height: 1.5rem;
       }
 
       .date {
         font-family: $f-bebas;
-        font-size: $s-subtitle-desktop;
+        font-size: $s-text-mobile;
         line-height: 2rem;
       }
 
       .infos {
         font-family: $f-bebas;
-        font-size: $s-subtitle-desktop;
+        font-size: $s-text-mobile;
         line-height: 2rem;
       }
     }
 
     .button {
-      align-self: flex-end;
+      align-self: center;
       background-color: transparent;
       color: $c-white;
       padding: 1rem 2rem;
       border-radius: 50px;
-      font-size: $s-button-desktop;
+      font-size: $s-button-mobile;
       font-family: $f-bebas;
       border: $c-cherry solid 2px;
       transition: all 0.3s ease-in-out;
+      margin: 2rem 0;
 
       &:hover {
         background-color: $c-cherry;
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) {
+}
+
+@media (min-width: 400px) {
+}
+
+@media (min-width: 414px) {
+}
+
+/*----------------------------------------------------------------------------------
+-------------------------------------  TABLETTE ------------------------------------
+----------------------------------------------------------------------------------*/
+
+@media (min-width: 599px) {
+}
+
+@media (min-width: 899px) {
+}
+
+@media (min-width: 1024px) {
+}
+
+/*----------------------------------------------------------------------------------
+-------------------------------------  DESKTOP -------------------------------------
+----------------------------------------------------------------------------------*/
+
+@media (min-width: 1199px) {
+}
+
+@media (min-width: 1399px) {
+}
+
+@media (min-width: 1599px) {
+}
+
+@media (min-width: 1920px) {
+  .actu-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rem 3rem;
+
+    .image-container {
+      width: 40%;
+
+      img {
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+      }
+    }
+
+    .content {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      .title {
+        font-family: $f-bebas;
+        font-size: $s-xxl-title-desktop;
+        line-height: 9rem;
+        color: $c-white;
+        text-align: right;
+        margin-bottom: 5rem;
+
+        .title-span {
+          display: block;
+        }
+
+        .red-span {
+          padding: 1rem 3rem 0 3rem;
+          margin-right: -3rem;
+        }
+      }
+
+      .text-container {
+        widows: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: $c-white;
+
+        & > * {
+          width: 100%;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: flex-end;
+          text-align: end;
+        }
+
+        .title-event {
+          font-size: $s-text-desktop;
+          line-height: 1.5rem;
+        }
+
+        .date {
+          font-family: $f-bebas;
+          font-size: $s-subtitle-desktop;
+          line-height: 1.5rem;
+        }
+
+        .infos {
+          font-family: $f-bebas;
+          font-size: $s-subtitle-desktop;
+          line-height: 1.5rem;
+        }
+      }
+
+      .button {
+        align-self: flex-end;
+        background-color: transparent;
+        color: $c-white;
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        font-size: 10rem;
+        font-family: $f-bebas;
+        border: $c-cherry solid 2px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: $c-cherry;
+        }
       }
     }
   }

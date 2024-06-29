@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 import Logo from 'assets/images/logo.png';
 import Facebook from 'components/SVG/Facebook';
 import Instagram from 'components/SVG/Instagram';
-import Email from 'components/SVG/Email';
 
 const Footer: FunctionComponent = () => {
   const year = new Date();
@@ -28,9 +27,6 @@ const Footer: FunctionComponent = () => {
           </a>
           <a href="https://www.instagram.com/rencontressouslecerisier/" target="_blank" rel="noreferrer">
             <Instagram className="icon instagram" width={40} height={40} />
-          </a>
-          <a href="mailto:theatresouslecerisier@gmail.com">
-            <Email className="icon email" width={40} height={40} />
           </a>
         </div>
       </div>
