@@ -275,10 +275,10 @@
   .hero {
     flex-direction: row;
     background-image: url('/assets/images/hero-bg.webp');
-    padding: 4rem 3rem 3rem 3rem;
+    padding: 10% 3rem 3rem 3rem;
 
     .hero-img {
-      margin-top: 4rem;
+      margin-top: 5rem;
     }
 
     .hero-text {
@@ -332,8 +332,8 @@
     padding: 5rem 3rem 3rem 3rem;
 
     .hero-img {
-      width: 450px;
-      margin-top: 8rem;
+      width: 500px;
+      margin-top: 9rem;
     }
 
     .hero-text {
@@ -372,8 +372,7 @@
 @media (min-width: 1599px) {
   .hero {
     .hero-img {
-      width: 550px;
-      margin-top: 10rem;
+      width: 600px;
     }
 
     .hero-text {
@@ -411,6 +410,11 @@
 @media (min-width: 1920px) {
   .hero {
     padding: 8rem 3rem 3rem 3rem;
+
+    .hero-img {
+      width: 500px;
+      margin-top: 8rem;
+    }
 
     .hero-text {
       width: 70%;

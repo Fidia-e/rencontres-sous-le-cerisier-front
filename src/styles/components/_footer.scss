@@ -125,114 +125,13 @@
 ----------------------------------------------------------------------------------*/
 
 @media (min-width: 1199px) {
-}
-
-@media (min-width: 1399px) {
-}
-
-@media (min-width: 1599px) {
-}
-
-@media (min-width: 1920px) {
   .footer-container {
     width: 100%;
     height: 400px;
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $c-black;
 
     & > * {
       width: 33%;
-    }
-
-    .logo-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      .logo {
-        width: 200px;
-        height: 200px;
-      }
-
-      .title-logo {
-        font-family: $f-bebas;
-        font-size: 1.5rem;
-        color: $c-light-cherry;
-        margin: 1rem 0;
-      }
-    }
-
-    .social-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      .icons-container {
-        width: 150px;
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        margin-top: 1rem;
-
-        a {
-          width: 45px;
-          height: 45px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          .icon {
-            transition: all ease-in-out 0.3s;
-            fill: $c-white;
-
-            &:hover {
-              transform: translateY(-3px);
-              fill: $c-light-cherry;
-            }
-          }
-        }
-      }
-    }
-
-    .links-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      .legales-link {
-        margin-bottom: 2rem;
-        position: relative;
-        z-index: 1;
-        padding: 0.3rem;
-        transition: all ease-in-out 0.3s;
-
-        &::before {
-          content: '';
-          position: absolute;
-          background: $c-white;
-          width: 0px;
-          height: 100%;
-          left: 0;
-          bottom: 0;
-          transition: 0.3s all ease-in-out;
-          z-index: 0;
-        }
-
-        &:hover::before {
-          width: 100%;
-          z-index: -1;
-        }
-
-        &:hover {
-          color: $c-cherry;
-        }
-      }
     }
   }
 }
