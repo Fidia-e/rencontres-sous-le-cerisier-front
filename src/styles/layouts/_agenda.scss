@@ -164,20 +164,91 @@
   }
 }
 
-@media (min-width: 375px) {
-}
-
-@media (min-width: 400px) {
-}
-
-@media (min-width: 414px) {
-}
-
 /*----------------------------------------------------------------------------------
 -------------------------------------  TABLETTE ------------------------------------
 ----------------------------------------------------------------------------------*/
 
 @media (min-width: 599px) {
+  .agenda-container {
+    padding: 4rem 2rem 0 2rem;
+
+    .content {
+      .title {
+        font-size: $s-big-title-desktop;
+        line-height: 5rem;
+      }
+
+      .text-container {
+        p {
+          font-size: $s-text-tablet;
+          line-height: 1.7rem;
+        }
+
+        .uppercase {
+          font-size: $s-subtitle-tablet;
+        }
+      }
+    }
+
+    .cta-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+
+      .social-container {
+        font-size: $s-subtitle-tablet;
+        line-height: 1.7rem;
+      }
+    }
+  }
+
+  .shows-container {
+    padding: 2rem;
+
+    .title-shows {
+      font-size: $s-title-tablet;
+    }
+
+    .program-content {
+      width: 80%;
+      padding: 2rem 0;
+
+      .show-infos {
+        padding: 1rem 0;
+
+        &:not(:last-child) {
+          margin-bottom: 3rem;
+        }
+
+        .text-show {
+          .day-number {
+            font-size: $s-title-tablet;
+          }
+
+          .date {
+            font-size: $s-button-tablet;
+          }
+
+          .title-show {
+            font-size: 1.9rem;
+            line-height: 2.2rem;
+          }
+
+          .details {
+            font-size: $s-text-tablet;
+            line-height: 1.7rem;
+          }
+        }
+
+        .image-show {
+          width: 350px;
+          margin: 2rem 0 1rem 0;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 899px) {

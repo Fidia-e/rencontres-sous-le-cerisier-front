@@ -93,20 +93,47 @@
   }
 }
 
-@media (min-width: 375px) {
-}
-
-@media (min-width: 400px) {
-}
-
-@media (min-width: 414px) {
-}
-
 /*----------------------------------------------------------------------------------
 -------------------------------------  TABLETTE ------------------------------------
 ----------------------------------------------------------------------------------*/
 
 @media (min-width: 599px) {
+  .actu-container {
+    .image-container {
+      img {
+        width: 350px;
+      }
+    }
+
+    .content {
+      .title {
+        font-size: $s-big-title-desktop;
+        line-height: 5rem;
+      }
+
+      .text-container {
+        .title-event {
+          font-size: $s-text-tablet;
+          line-height: 1.7rem;
+        }
+
+        .date {
+          font-size: $s-text-tablet;
+          line-height: 2.3rem;
+        }
+
+        .infos {
+          font-size: $s-text-tablet;
+          line-height: 2.3rem;
+        }
+      }
+
+      .button {
+        font-size: $s-button-tablet;
+        margin: 3rem 0;
+      }
+    }
+  }
 }
 
 @media (min-width: 899px) {

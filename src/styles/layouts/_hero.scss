@@ -128,17 +128,7 @@
         }
       }
     }
-
-    .arrow {
-      bottom: 2.5rem;
-    }
   }
-}
-
-@media (min-width: 400px) {
-}
-
-@media (min-width: 414px) {
 }
 
 @media (min-width: 430px) {
@@ -202,6 +192,10 @@
           height: 40px;
         }
       }
+    }
+
+    .arrow {
+      bottom: 2.5rem;
     }
   }
 }

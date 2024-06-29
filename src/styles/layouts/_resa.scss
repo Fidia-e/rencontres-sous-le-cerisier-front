@@ -81,7 +81,6 @@
     align-items: center;
     color: $c-white;
     margin-top: 3rem;
-    font-size: $s-text-mobile;
     line-height: 1.5rem;
     text-align: center;
 
@@ -92,14 +91,17 @@
       color: $c-white;
       text-align: center;
       background-color: $c-cherry;
-      margin-bottom: 3rem;
       padding: 0.7rem 0 0.5rem 0;
+    }
+
+    .address {
+      font-size: $s-text-mobile;
+      line-height: 1.5rem;
+      margin: 3rem 0;
     }
 
     .map-container {
       width: 100vw;
-      height: 400px;
-      margin-top: 3rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -118,20 +120,59 @@
   }
 }
 
-@media (min-width: 375px) {
-}
-
-@media (min-width: 400px) {
-}
-
-@media (min-width: 414px) {
-}
-
 /*----------------------------------------------------------------------------------
 -------------------------------------  TABLETTE ------------------------------------
 ----------------------------------------------------------------------------------*/
 
 @media (min-width: 599px) {
+  .resa-container {
+    .title {
+      font-size: $s-big-title-desktop;
+      line-height: 5rem;
+    }
+
+    .content {
+      .date-resa {
+        font-size: $s-text-tablet;
+        line-height: 1.7rem;
+      }
+
+      .infos {
+        font-size: $s-text-tablet;
+        line-height: 1.7rem;
+      }
+
+      .button-menu {
+        font-size: $s-button-tablet;
+      }
+    }
+
+    .address-container {
+      font-size: $s-text-tablet;
+
+      .title-address {
+        font-size: $s-title-tablet;
+        padding: 1rem 0 0.7rem 0;
+      }
+
+      .address {
+        font-size: $s-text-tablet;
+      }
+
+      .map-container {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .map {
+          width: 100%;
+          height: 250px;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 899px) {

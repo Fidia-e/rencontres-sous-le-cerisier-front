@@ -101,20 +101,38 @@
   }
 }
 
-@media (min-width: 375px) {
-}
-
-@media (min-width: 400px) {
-}
-
-@media (min-width: 414px) {
-}
-
 /*----------------------------------------------------------------------------------
 -------------------------------------  TABLETTE ------------------------------------
 ----------------------------------------------------------------------------------*/
 
 @media (min-width: 599px) {
+  .contact-container {
+    .content {
+      .title {
+        font-size: $s-big-title-desktop;
+        line-height: 5rem;
+      }
+
+      .contacts {
+        .contact-item {
+          font-size: $s-text-tablet;
+          line-height: 1.7rem;
+
+          .uppercase {
+            font-size: $s-subtitle-tablet;
+          }
+        }
+      }
+    }
+
+    .cta-container {
+      margin-top: 4rem;
+
+      .social-container {
+        font-size: $s-subtitle-tablet;
+      }
+    }
+  }
 }
 
 @media (min-width: 899px) {

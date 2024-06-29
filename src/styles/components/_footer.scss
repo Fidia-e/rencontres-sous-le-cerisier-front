@@ -8,6 +8,7 @@
   background-color: $c-black;
   padding: 4rem 1rem;
   text-align: center;
+  font-size: $s-text-mobile;
 
   & > * {
     width: 100%;
@@ -103,20 +104,14 @@
   }
 }
 
-@media (min-width: 375px) {
-}
-
-@media (min-width: 400px) {
-}
-
-@media (min-width: 414px) {
-}
-
 /*----------------------------------------------------------------------------------
 -------------------------------------  TABLETTE ------------------------------------
 ----------------------------------------------------------------------------------*/
 
 @media (min-width: 599px) {
+  .footer-container {
+    font-size: $s-text-tablet;
+  }
 }
 
 @media (min-width: 899px) {
