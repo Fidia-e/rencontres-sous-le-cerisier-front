@@ -433,15 +433,22 @@
 
   .shows-container {
     .program-content {
-      width: 70%;
+      width: 75%;
     }
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1599px) {
   .shows-container {
     .program-content {
-      width: 60%;
+      // width: 60%;
+
+      .show-infos {
+        .image-show {
+          width: 450px;
+          margin: 0;
+        }
+      }
     }
   }
 }

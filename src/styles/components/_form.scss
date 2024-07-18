@@ -3,19 +3,64 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $c-white;
-  border-radius: 50px;
   margin: 3rem 0;
-  padding: 2rem 0.5rem;
   color: $c-black;
+
+  .form-background {
+    width: 100%;
+    height: auto;
+    background-color: $c-white;
+    border-radius: 50px;
+    padding: 2rem 1rem;
+
+    &:first-child {
+      margin-bottom: 3rem;
+    }
+  }
 
   .title-form {
     width: 100%;
     font-family: $f-bebas;
     font-size: $s-title-tablet;
     color: $c-light-cherry;
-    margin: 1rem 0 1rem 2rem;
+    margin: 1rem 0 1rem 1rem;
     text-align: left;
+  }
+
+  .ticket-title {
+    width: 100%;
+    font-size: $s-text-mobile;
+    font-weight: bold;
+    color: $c-black;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  .personnal-infos {
+    width: 100%;
+    background-color: $c-white;
+    border-radius: 50px;
+    padding: 2rem 0.5rem 1rem 0.5rem;
+
+    .input-container {
+      display: flex;
+      flex-direction: column;
+
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+
+      .label {
+        margin-bottom: 0.5rem;
+      }
+
+      .input {
+        width: 100%;
+        border: solid 0.5px $c-black;
+        border-radius: 5px;
+        padding: 0.2rem 0.5rem;
+      }
+    }
   }
 
   .form-content {
@@ -23,6 +68,7 @@
     height: 350px;
     overflow-y: scroll;
     padding: 0 0.5rem;
+
     // scrollbar-gutter: stable both-edges; // TODO
 
     .ticket-item {
@@ -46,17 +92,12 @@
         }
       }
 
-      &:last-child {
-        margin-bottom: 3rem;
+      &:first-child {
+        margin-top: 1rem;
       }
 
-      .ticket-title {
-        width: 100%;
-        font-size: $s-text-mobile;
-        font-weight: bold;
-        color: $c-black;
-        margin-bottom: 1rem;
-        text-align: left;
+      &:last-child {
+        margin-bottom: 2rem;
       }
 
       .price-content {
@@ -175,9 +216,30 @@
 -------------------------------------  TABLETTE ------------------------------------
 ----------------------------------------------------------------------------------*/
 
+@media (min-width: 375px) {
+  .form {
+    .personnal-infos {
+      .input-container {
+        .input {
+          width: 80%;
+          padding: 0.5rem 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) and (min-height: 769px) {
+  .form {
+    .form-content {
+      height: 500px;
+    }
+  }
+}
+
 @media (min-width: 599px) {
   .form {
-    width: 75%;
+    width: 80%;
     padding: 3rem 2rem;
 
     .title-form {
@@ -186,16 +248,24 @@
       margin: 0rem 0 1rem 4rem;
     }
 
+    .form-background {
+      padding: 3rem 1rem;
+    }
+
+    .ticket-title {
+      font-size: $s-text-tablet;
+      line-height: 1.7rem;
+    }
+
+    .personnal-infos {
+      padding: 0 2rem;
+    }
+
     .form-content {
       height: 500px;
       padding: 1rem 2rem 0 2rem;
 
       .ticket-item {
-        .ticket-title {
-          font-size: $s-text-tablet;
-          line-height: 1.7rem;
-        }
-
         .price-content {
           .price {
             font-size: $s-text-tablet;
@@ -270,15 +340,29 @@
       margin: 0rem 0 2rem 4rem;
     }
 
+    .ticket-title {
+      font-size: $s-text-desktop;
+      line-height: 2rem;
+    }
+
+    .personnal-infos {
+      padding: 0 3rem;
+
+      .input-container {
+        .label {
+          margin-bottom: 1rem;
+        }
+
+        .input {
+          width: 70%;
+        }
+      }
+    }
+
     .form-content {
       padding: 0 3rem;
 
       .ticket-item {
-        .ticket-title {
-          font-size: $s-text-desktop;
-          line-height: 2rem;
-        }
-
         .price-content {
           flex-direction: row;
 
@@ -344,6 +428,10 @@
       margin: 0 0 3rem 6rem;
     }
 
+    .ticket-title {
+      font-size: $s-text-desktop;
+    }
+
     .form-content {
       padding: 0 3rem;
 
@@ -358,10 +446,6 @@
 
         &:last-child {
           margin-bottom: 3rem;
-        }
-
-        .ticket-title {
-          font-size: $s-text-desktop;
         }
       }
     }
